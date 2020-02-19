@@ -1,0 +1,24 @@
+
+1) getIncomingComponents -> query {
+  products {
+    id
+    name
+    inventory {
+      status
+      prototype {
+        name
+        type
+      }
+    }
+  }
+}
+
+2) getModelComponents -> query {
+  models {
+    name
+    components {
+      type
+      name
+    }
+  }
+}

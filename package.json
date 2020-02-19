@@ -1,0 +1,26 @@
+{
+  "name": "im_apis",
+  "version": "1.0.0",
+  "description": "Inventory management API's compatible with the Prisma client",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc -p ."
+  },
+  "author": "Rahul Suresh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "prisma-client-lib": "^1.34.10"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.5.0",
+    "@types/node-fetch": "^2.5.4",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.6.0-dev.20190619"
+  }
+}
