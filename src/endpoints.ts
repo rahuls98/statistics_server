@@ -114,7 +114,7 @@ router.get('/lm/getObjectStore', async (req:Request, res:Response) => {
     res.send(vehicleObjectStore);
 })
 
-router.get('/lm/newVehicle/:vin/:offset', async (req:Request, res:Response) => {
+router.post('/lm/newVehicle/:vin/:offset', async (req:Request, res:Response) => {
     const vin = req.params.vin;
     const offset = parseInt(req.params.offset);
     const keys = Object.keys(vehicleObjectStore);
@@ -134,7 +134,7 @@ router.get('/lm/newVehicle/:vin/:offset', async (req:Request, res:Response) => {
     else res.send("Vehicle already present");
 });
 
-router.get('/lm/addNode/:vin/:id/:after', async (req:Request, res:Response) => {
+router.post('/lm/addNode/:vin/:id/:after', async (req:Request, res:Response) => {
     const vin = req.params.vin;
     const id  = req.params.id;
     const after = req.params.after
